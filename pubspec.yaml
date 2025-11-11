@@ -1,0 +1,32 @@
+name: bargain_wala
+description: A Flutter app for bargaining and shopping.
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # For Quadrant 1: Scanning items
+  # Note: Requires extra setup for iOS (Info.plist) and Android (build.gradle)
+  camera: ^0.10.5+9 
+
+  # For managing app-wide state, like the shopping cart and negotiation status
+  provider: ^6.1.1
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
